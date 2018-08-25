@@ -1,3 +1,6 @@
+package StringWithoutX2;
+
+import StringWithoutX2.StringWithoutX2;
 import org.junit.Before;
 import org.junit.Test;
 

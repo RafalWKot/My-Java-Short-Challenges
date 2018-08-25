@@ -1,3 +1,6 @@
+package SquareUp;
+
+import SquareUp.SquareUp;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
