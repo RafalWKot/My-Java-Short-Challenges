@@ -25,7 +25,20 @@ public class AlternatingSplit {
 
     public String decrypt(final String encryptedText, final int n) {
 
+        String text = encryptedText;
+        StringBuilder newStr = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < text.length() / 2; j++) {
+                newStr.append(text.charAt((text.length() / 2)  + j));
+                newStr.append(text.charAt((j)));
+            }
+            if (text.length() % 2 == 1) {
+                newStr.append(text.charAt((text.length() - 1)));
+            }
+            text = newStr.toString();
+            newStr.setLength(0);
+        }
 
-        return null;
+        return text;
     }
 }
