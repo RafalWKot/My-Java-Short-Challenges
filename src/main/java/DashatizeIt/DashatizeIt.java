@@ -10,7 +10,7 @@ public class DashatizeIt {
                 .toArray();
 
         StringBuilder stringBuilder = new StringBuilder();
-        
+
         for (int i = 0; i < digits.length; i++) {
 
             if (digits[i] % 2 == 1 && digits.length > 1) {
