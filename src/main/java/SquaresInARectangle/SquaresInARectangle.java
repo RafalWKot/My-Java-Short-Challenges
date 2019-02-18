@@ -1,9 +1,17 @@
 package SquaresInARectangle;
 
-public class SquaresInARectangle {
+class SquaresInARectangle {
 
-    public static int findSquares(int x, int y){
+    static int findSquares(int x, int y){
 
-        return -1;
+        int totalNumberOfSquares;
+        totalNumberOfSquares = x * y;
+        for (int i = 2; i <= x; i++) {
+            if (i <= y) {
+                totalNumberOfSquares += (x + 1 - i) * (y + 1 - i);
+            }
+        }
+
+        return totalNumberOfSquares;
     }
 }
