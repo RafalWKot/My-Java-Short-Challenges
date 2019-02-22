@@ -24,4 +24,11 @@ public class FoldAnArrayTest {
         expected = new int[]{14, 75, 0};
         assertEquals(Arrays.toString(expected), Arrays.toString(FoldAnArray.foldArray(input, 1)));
     }
+
+    @Test
+    public void extendedTests() {
+        int[] input = new int[]{1, 2, 3, 4, 5, 6};
+        int[] expected = new int[]{7, 7, 7};
+        assertEquals(Arrays.toString(expected), Arrays.toString(FoldAnArray.foldArray(input, 1)));
+    }
 }
