@@ -12,7 +12,6 @@ public class PointsCircleTest {
         assertEquals(29,PointsCircle.pointsNumber(3));
         assertEquals(81,PointsCircle.pointsNumber(5));
         assertEquals(3141549,PointsCircle.pointsNumber(1000));
-
     }
 
 }
